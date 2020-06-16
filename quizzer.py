@@ -56,6 +56,10 @@ if __name__ == '__main__':
       globals()[mode] = { v:k for k,v in eval(mode).items() }
       continue
 
+    if selection == 'exit':
+      print('Science for fun and profit!')
+      exit()
+
     if selection == eval(mode)[choice]:
       print("Success")
     else:
